@@ -30,3 +30,7 @@ Notes to myself next time I come back to this after a year and forget how to wor
 10. Some interesting class names from core Ark classes are: PrimalCharacter (all Ark dinos and players), ShooterCharacter (human players only), PDA_Voice_Collection with DA_Male_Legacy, DA_Male_A, etc. which are stored in ShooterCharacter.Player Voice Collection; and Character Status Component (status effect sounds).
 
 To view the pathnames of currently playing sounds while playing the game, set `au.debug.sounds 1` from the Ark in-game console.
+
+## Publishing
+
+Once the mod is working and tested, Unreal's UGC menu has a "Share" option that automatically uploads to CurseForge provided you've linked your account login the way that it wants.  It's one click and even provides a convenience URL link directly to your CurseForge page.  Very easy.  Once the mod is on CurseForge, it takes about 20 minutes for it to "Cook" and reach "waiting for approval".  YOU are the one who approves it and publishes it, as the build is considered a private test build until you mark it Approved.  There's a complicated way to download a test mod to a private server for private testing, but I usually don't bother and just push the build public and test it "in production".  It can be rolled back if necessary.
