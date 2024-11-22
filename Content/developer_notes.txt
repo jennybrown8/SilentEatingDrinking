@@ -25,8 +25,18 @@ Test while standing next to another person, and have them test too.
 Test berries, meat, fria curry, a mindwipe, and a custom consumable.
 Test that regular items are still usable and make noise.
 Test water tap.
+Test bed travel for yawn (requires two players).
 
 Test as male and female characters (legacy and new) once we implement reducing body sounds (pooping, drowning, suffocation from mushrooms, megarabies, swamp fever).
+
+
+Testing:
+ForceGiveBuff Buff_SwampFever true
+
+Whoomph sound at fever start:
+Buff_SwampFever.Extra Activation Sound to Play.Human_Infected_Cue
+
+Then it goes into the status=Infected coughing sound.
 
 
 <a href="https://www.flaticon.com/free-icons/mute" title="mute icons">Mute icons created by pictranoosa - Flaticon</a>
