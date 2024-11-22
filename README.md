@@ -27,6 +27,6 @@ Notes to myself next time I come back to this after a year and forget how to wor
 7. SaveGameActor_SilentEatingDrinking is the singleton that sets up event hooks and bootstraps the code.  It also modifies player-level sounds.
 8. Buff_SilentEatingDrinking is the core business logic for silencing the food and drink items individually.
 9. Remember to check both the graph view and the individual functions to review how it works.  Class Settings and Class Defaults are also important.
-10. Some interesting class names from core Ark classes are: PrimalCharacter (all Ark dinos and players), ShooterCharacter (human players only), PDA_Voice_Collection with DA_Male_Legacy, DA_Male_A, etc; and Character Status Component (status effect sounds).
+10. Some interesting class names from core Ark classes are: PrimalCharacter (all Ark dinos and players), ShooterCharacter (human players only), PDA_Voice_Collection with DA_Male_Legacy, DA_Male_A, etc. which are stored in ShooterCharacter.Player Voice Collection; and Character Status Component (status effect sounds).
 
-To test sounds while playing, set `au.debug.sounds 1` from the Ark in-game console.
+To view the pathnames of currently playing sounds while playing the game, set `au.debug.sounds 1` from the Ark in-game console.
