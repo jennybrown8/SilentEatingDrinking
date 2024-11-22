@@ -1,0 +1,29 @@
+PDA_VoiceCollection is referenced from:
+
+BASE_PrimalGameData_BP - only provides a selection of which voice do you want
+
+PrimalItemSkin_CharacterSkin_Bob
+PlayerPawnTest*
+PlayerPawnTest_Male_Retarget
+
+PrimalGameDataARKNX_BP - top level game stuff, dinos/crafting
+
+AnimNotify_PlayPlayerVO - uses Voice Line Selection Name to pick a sound out of the list, and has a place for Custom Sound Assets which are preferred. Definitely has eat/drink/yawn. Does not have suffocate/drown/emerge.
+
+DA_Female* DA_Male*
+StructureBP_Toilet - triggers player's poop animation
+
+PrimalItemSkinGeneric - has empty Voice Collection Overdrive (note spelling)
+SpawnUI - fancy imagemap
+W_CharacterChanger - fancy UI
+
+and my
+Buff_SilentEatingDrinking
+
+
+Fancy audio debugger tip.  In the console while playing, type:
+au.debug.sounds 1
+
+This will show the pathname of every sound as it plays.
+
+

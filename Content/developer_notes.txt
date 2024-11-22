@@ -1,0 +1,32 @@
+To test when the event triggers, you can respawn yourself using the implant or use the command `editorreconnect`.
+
+SaveGameActor_BP_SilentEatingDrinking is what applies the buff to the player on character spawn.
+
+The buff itself, and all item silencing code, is in Buff_SilentEatingDrinking.  It looks up the Instigator of the buff (which is the player character), finds the inventory from there, and scans it for PrimalItemConsumableEatable items, and for each one, it nulls out their use sound and their use animation.
+
+PrimalItemConsumable_Eatable has a property "Play Animation on Use" that points to Human-Eat_Montage.  Need to disable that to silence some sounds.
+
+PrimalItemCustomFoodRecipe_Base skips the montage and plays "Use Item Sound" instead.  Need to null that out to silence the other sounds.
+
+PrimalItemConsumableRespecSoup also uses Use Item Sound.
+
+
+Testing:
+
+cheat gfi CookedMeat 5 0 0 
+cheat gfi WeaponMetalPick 1 1 0
+cheat gfi PrimalItemConsumable_WaterJarRefill 1 1 0
+cheat gfi Soup_FriaCurry 1 1 0
+
+Test while standing, crouching, laying, and riding a tamed dino.
+Test while swimming or wading.
+Test refilling water jar while wading.
+Test while standing next to another person, and have them test too.
+Test berries, meat, fria curry, a mindwipe, and a custom consumable.
+Test that regular items are still usable and make noise.
+Test water tap.
+
+Test as male and female characters (legacy and new) once we implement reducing body sounds (pooping, drowning, suffocation from mushrooms, megarabies, swamp fever).
+
+
+<a href="https://www.flaticon.com/free-icons/mute" title="mute icons">Mute icons created by pictranoosa - Flaticon</a>
